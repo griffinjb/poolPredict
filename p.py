@@ -370,17 +370,14 @@ def get_game_state():
 	# extract ball position and number of balls
 
 	# position vector cueball - cue
-
-
-
-
+	_=None
 
 def setup_balls():
 
-	N_B,B,P = get_game_state()
+	# N_B,B,P = get_game_state()
 
-	# N_B = 16
-	# B = rack_and_shoot()
+	N_B = 16
+	B = rack_and_shoot()
 
 	# init array of balls B = [N_B,4=[px,py,vx,vy]]
 	# N_B = 16
@@ -506,9 +503,9 @@ def UI(B):
 
 if __name__ == '__main__':
 
-	# B,N_B = setup_balls()
+	B,N_B = setup_balls()
 
-	B,N_B,P = get_game_state()
+	# B,N_B,P = get_game_state()
 
 	# run sim until collision
 	# compute post collision V
